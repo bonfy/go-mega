@@ -2,9 +2,9 @@
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-brightgreen.svg)](https://raw.githubusercontent.com/bonfy/go-mega/master/LICENSE)
 
-大家好，我是 [BONFY][1] ，拥有多年开发Web的经验，不过想起我当时入门 Python Web 的时候也是看了当时 [Miguel Grinberg](https://blog.miguelgrinberg.com/) 的博客，按照他的教程一步一步搭建最简单的博客，再到自己去研究 _**Flask**_ 源码以及其他的 Web 框架。
+大家好，我是 [BONFY][1] ，拥有多年开发Web的经验，不过想起我当时入门 Python Web 的时候也是看了当时 [Miguel Grinberg](https://blog.miguelgrinberg.com/) 的博客，按照他的教程一步一步搭建最简单的博客，再到自己去研究 **Flask** 源码以及其他的 Web 框架。
 
-目前由于工作需要，我经常要用 _**Go**_开发Web应用，也积攒了一些经验和方法，所以就想模仿 [The Flask Mega-Tutorial教程](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) 来编写一套 Go 的 Web 教程。
+目前由于工作需要，我经常要用 **Go** 开发Web应用，也积攒了一些经验和方法，所以就想模仿 [The Flask Mega-Tutorial教程](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) 来编写一套 **Go** 的 Web 教程。
 
 本书的目录我尽量和 The Flask Mega 保持一致，不过对于有些章节也会酌情删减。
 
@@ -13,6 +13,7 @@
 | Title | Code |
 | :--- | :--- |
 | [00-Prepare](00-prepare.md) |  |
+| [01-Hello-World](01-hello-world.md) | [Source](https://github.com/bonfy/go-mega-code/tree/01-Hello-World) |
 
 ## 声明
 
