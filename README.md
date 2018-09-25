@@ -13,8 +13,8 @@
 | Title | Code | Zip |
 | :--- | :--- | :--- |
 | [00-Prepare](00-prepare.md) |  | |
-| [01-Hello-World](01-hello-world.md) | [Source](https://github.com/bonfy/go-mega-code/tree/01-Hello-World) | [Zip](https://github.com/bonfy/go-mega-code/archive/v0.1.zip)|
- [02-Template-Basic](02-template-basic.md) | [Source](https://github.com/bonfy/go-mega-code/tree/02-Template)  | [Zip](https://github.com/bonfy/go-mega-code/archive/v0.2.zip)|
+| [01-Hello-World](01-hello-world.md) | [View](https://github.com/bonfy/go-mega-code/tree/01-Hello-World) | [Download](https://github.com/bonfy/go-mega-code/archive/v0.1.zip)|
+ [02-Template-Basic](02-template-basic.md) | [View](https://github.com/bonfy/go-mega-code/tree/02-Template)  | [Download](https://github.com/bonfy/go-mega-code/archive/v0.2.zip)|
 
 
 ## 声明
