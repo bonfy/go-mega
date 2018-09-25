@@ -14,6 +14,8 @@
 | :--- | :--- |
 | [00-Prepare](00-prepare.md) |  |
 | [01-Hello-World](01-hello-world.md) | [Source](https://github.com/bonfy/go-mega-code/tree/01-Hello-World) |
+ [02-Template Basic](02-template-basic.md) | [Source](https://github.com/bonfy/go-mega-code/tree/02-Template)  |
+
 
 ## 声明
 
@@ -31,7 +33,7 @@
 如果你对于本书有什么建议或意见，欢迎批评指正，并联系我。
 
 * [个人主页](https://bonfy.im)
-* [BLOG](https://blog.bonfy.im)
+* [个人博客](https://blog.bonfy.im)
 * [GitHub][1]
 * [Twitter](https://twitter.com/foreverbonfy)
 
