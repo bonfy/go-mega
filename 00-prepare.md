@@ -43,5 +43,7 @@ Go 是一门新生的语言，而且有个好的公司推广（google），而�
 * 特殊的 error 处理机制，基本上一次编译成功，后面很少出错
 * 编译之后二进制，易于部署
 
+## Links
+
 * [目录](<README.md>)
   * 下一节: [01-Hello-World](<01-hello-world.md>)
