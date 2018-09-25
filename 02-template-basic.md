@@ -4,7 +4,8 @@
 
 本章将沿用这个应用，在此之上，加入模版渲染，使得页面更丰富
 
-_本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tree/02-Template) [Diff](https://github.com/bonfy/go-mega-code/compare/01-Hello-World...02-Template)
+_本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tree/02-Template), [Diff](https://github.com/bonfy/go-mega-code/compare/01-Hello-World...02-Template), 
+[Zip](https://github.com/bonfy/go-mega-code/archive/v0.2.zip)
 
 ## 什么是模板
 
@@ -62,9 +63,9 @@ $ go run main.go
 
 在浏览器打开它的URL看看结果
 
-![02-01](02-01.png)
+![02-01](images/02-01.png)
 
-本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/1cf55f62ae8ee34bb9fec64508398480b9168e2c)
+> 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/1cf55f62ae8ee34bb9fec64508398480b9168e2c)
 
 
 我们暂时将 template 以文本方式耦合在代码中，随着我们项目的扩大，这个不利于管理，而且如果公司有前端支持的话，模板的工作很大可能会有前端设计，所以我们有必要对其进行解偶。我们打算将模板文件放入 templates 的文件夹
@@ -119,7 +120,7 @@ func main() {
 
 然后运行，在浏览器中打开，结果是与刚才一样的，不过代码的组织结构却更清晰了。
 
-本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/cca162aa6510f6d8bf96cb21ef8aed5ea0a1a1a1)
+> 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/cca162aa6510f6d8bf96cb21ef8aed5ea0a1a1a1)
 
 ## 模板的常用操作
 
@@ -178,7 +179,7 @@ func main() {
 }
 ```
 
-本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/9df5fb2f1f7d400513e3877aad0704a5e69366ac)
+> 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/9df5fb2f1f7d400513e3877aad0704a5e69366ac)
 
 ### 循环
 
@@ -247,11 +248,11 @@ func main() {
     http.ListenAndServe(":8888", nil)
 }
 ```
-本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/50e5028870d4ab7918d391007162c4387540f165)
+> 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/50e5028870d4ab7918d391007162c4387540f165)
 
 运行效果图
 
-![02-02](02-02.png)
+![02-02](images/02-02.png)
 
 
 ## Links
