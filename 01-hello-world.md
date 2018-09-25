@@ -37,7 +37,7 @@ func main() {
 }
 ```
 
-短短不到10行代码，我们的 Hello World 应用就已经完成了，而且不需要任何的其他第三方Package，只需要引入官方的 _** net/http **_就行了，就是这么easy
+短短不到10行代码，我们的 Hello World 应用就已经完成了，而且不需要任何的其他第三方Package，只需要引入官方的 _**net/http**_ 就行了，就是这么easy
 
 让我们来运行下面的命令，看下效果
 
@@ -61,7 +61,7 @@ http://127.0.0.1:8888
 
 这里对上面的代码进行简单的说明
 
-这里的 `func main()` 是主程序入口，主要用到了 _** net/http **_的两个函数
+这里的 `func main()` 是主程序入口，主要用到了 _**net/http**_ 的两个函数
 
 ```go
 func HandleFunc(pattern string, handler func(ResponseWriter, *Request))
@@ -73,7 +73,7 @@ func ListenAndServe(addr string, handler Handler) error
 
 `ListenAndServe` 第一个参数为 addr，如果不提供ip，这里只传入端口，相当于 `0.0.0.0:8888` ，第二个参数 Handler 传入 nil，则表示使用 Default 的 Server
 
-另外 输出　｀Hello World｀ 的办法，大致有三个，如下:
+另外 输出　`Hello World` 的办法，大致有三个，如下:
 
 ```go
     // Case 1: w.Write byte
