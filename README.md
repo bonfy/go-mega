@@ -30,9 +30,10 @@
 
 如果你对于本书有什么建议或意见，欢迎批评指正，并联系我。
 
-* 个人主页
-* GitHub
-* Twitter
+* [个人主页](https://bonfy.im)
+* [BLOG](https://blog.bonfy.im)
+* [GitHub][1]
+* [Twitter](https://twitter.com/foreverbonfy)
 
 ## 支持我
 
