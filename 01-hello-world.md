@@ -92,3 +92,7 @@ io.WriteString(w, "Hello World")
 
 或者看下 [Go的http包详解](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/03.4.md)
 
+## Links
+
+  * [目录](<README.md>)
+  * 下一节: [02-Template Basic](<02-template-basic.md>)
