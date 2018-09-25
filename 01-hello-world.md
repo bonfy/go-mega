@@ -4,7 +4,7 @@
 
 我们亦不能免俗，所以本章我们的任务就是完成最简单的 Hello World
 
-_本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tree/01-Hello-World)
+_本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tree/01-Hello-World), [Zip](https://github.com/bonfy/go-mega-code/archive/v0.1.zip)
 
 ## 建立目录结构
 
