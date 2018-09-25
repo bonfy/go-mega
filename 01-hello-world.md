@@ -76,14 +76,14 @@ func ListenAndServe(addr string, handler Handler) error
 另外 输出　`Hello World` 的办法，大致有三个，如下:
 
 ```go
-    // Case 1: w.Write byte
-	w.Write([]byte("Hello World"))
+// Case 1: w.Write byte
+w.Write([]byte("Hello World"))
 
-	// Case 2: fmt.Fprintf
-	fmt.Fprintf(w, "Hello World")
+// Case 2: fmt.Fprintf
+fmt.Fprintf(w, "Hello World")
 
-	// Case 3: io.Write
-	io.WriteString(w, "Hello World")
+// Case 3: io.Write
+io.WriteString(w, "Hello World")
 ```
 
 其中第一种用的是 ResponseWriter 的 `Write([]byte) (int, error)` 方法， 而 后面两种是稍微用到了 Go 里面interface 的特性， ResponseWriter interface 要实现 `Write([]byte) (int, error)` 的方法，所以也就实现了 io.Writer 方法，所以可以作为 io.Writer 的类型作为 后面两个函数的参数。
