@@ -94,6 +94,6 @@ io.WriteString(w, "Hello World")
 
 ## Links
 
-  * [目录](<README.md>)
-  * 上一节: [00-Prepare](<00-prepare.md>)
-  * 下一节: [02-Template-Basic](<02-template-basic.md>)
+  * [目录](README.md)
+  * 上一节: [00-Prepare](00-prepare.md)
+  * 下一节: [02-Template-Basic](02-template-basic.md)
