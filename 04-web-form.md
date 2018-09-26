@@ -9,15 +9,19 @@ _本章的GitHub链接为_ [Source](https://github.com/bonfy/go-mega-code/tree/0
 
 ## 结构优化
 
-上一章我们通过模板继承 以及 PopulateTemplates 对 templates 文件夹进行了梳理，在继续开始Web表单之前，我们先梳理下其中 Go 代码的结构。
+上一章我们通过 模板继承 以及 PopulateTemplates 对 templates 文件夹进行了梳理，在继续开始Web表单之前，我们再来梳理下其中 **Go** 代码的结构。
 
-目前我们的所有的逻辑都集中在了main.go 文件里，包括 model struct， viewmodel struct 定义，还有handler的实现，对于小点的web应用程序，可能这有助于快速开发，不过随着项目的扩大，代码量会变得越来越多，越来越臃肿，最后甚至会影响到阅读代码。这个时候结构的优化就显得尤为重要了。
+目前我们的所有的逻辑都集中在了 `main.go` 文件里，包括 model struct， viewmodel struct 定义，还有 handler 的实现，对于小点的web应用程序，可能这有助于快速开发，不过随着项目的扩大，代码量会变得越来越多，越来越臃肿，最后甚至会影响到阅读代码。这个时候结构的优化就显得尤为重要了。
 
-我们的思路是 建立 package model 负责数据建模（以及后一章 [数据库](05-database.md) ORM）， package vm 负责View Model，package controller 负责 http 路由。
+我们的思路是 建立这样的数据结构:
 
-每个文件夹下的 g.go 负责存放该package的全局变量 以及 init 函数
+* package model         - 负责数据建模（以及后一章 [数据库](05-database.md) ORM）
+* package vm            - 负责View Model
+* package controller    - 负责 http 路由。
 
-我们先建立model 文件夹，然后将 Post、User struct 分别移到 model 文件夹下
+ 每个文件夹下的 g.go 负责存放该package的全局变量 以及 init 函数。（ 只能说 类似 Python 的 `__init__.py`, 因为 **Go** 其实是通过大小写来表明是否可以外部引用)
+
+我们先建立model 文件夹，然后将 Post、User struct 分别移到 `model` 文件夹下
 
 model/user.go
 
@@ -97,6 +101,8 @@ func (IndexViewModelOp) GetVM() IndexViewModel {
 ```
 
 将所有的路由相关移到controller
+
+`utils.go` 存放 辅助工具函数，一般都是本package引用，所以小写就可以了, 这里PopulateTemplates 函数其实最好是小写，不过不去管它了。
 
 controller/utils.go
 
@@ -191,7 +197,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-这里将匿名函数 实名成 indexHandler，并将所有的构造indexviewmodel 的逻辑全部移到了 vm/index.go 中的 GetVM 方法里
+这里将 匿名函数 实名成 indexHandler，并将所有的构造 indexviewmodel 的逻辑全部移到了 `vm/index.go` 中的 GetVM 方法里
 
 最终我们的结构优化成了下图的树状结构，这样有利于我们以后的扩展。
 
@@ -220,7 +226,7 @@ go-mega-code
 
 在将整个项目优化结构之后，我们建立登陆表单就非常简单了。
 
-按照index的做法，login表单我们其实需要，一个template, 一个vm, 以及一个handler
+按照index的做法，login表单我们其实需要，一个`template`, 一个`vm`, 以及一个`handler`（其实后面基本上所有的加页面的做法也是类似）
 
 templates/\_base.html
 
@@ -302,7 +308,7 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 
 ## 接收表单数据
 
-目前我们点击 login 按钮，页面发现没有变化，其实我们后台还是接收到了这个请求，只是依然返回的是这个页面，接下来我们要对POST请求和GET请求分别做处理。
+目前我们点击 `Login` 按钮，页面发现没有变化，其实我们后台还是接收到了这个请求，只是依然返回的是这个页面，接下来我们要对POST请求和GET请求分别做处理。
 
 controller/home.go
 
@@ -325,7 +331,11 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 }
 ```
 
-修改 loginHandler 对 MethodGet 和 MethodPost 分别处理，post接受 form post，运行后在login页面输入用户名、密码 点击Login，显示结果
+
+> Tip: html 中的form submit 是 Post 方法，简单说明下，不过相信大家都懂
+
+修改 loginHandler 对 `MethodGet` 和 `MethodPost` 分别处理，`MethodPost` 接受 form post，运行后在login页面输入用户名、密码 点击Login，显示结果
+
 
 ![](images/04-02.png)
 
@@ -333,11 +343,11 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 
 ## 表单后端验证
 
-表单验证分为服务器前端验证 与 后端验证，比如验证 输入字符个数、正则匹配等，一般来说 用户名密码正确性检查只能在后端验证，其它前后端验证都可以，不过为了减少服务器压力与加强用户提样，字符长度等检查 一般放在前端做检查。
+表单验证分为服务器前端验证 与 后端验证，比如验证 输入字符个数、正则匹配等，一般来说 用户名密码正确性检查只能在后端验证，其它前后端验证都可以，不过为了减少服务器压力与加强用户体验，字符长度等检查 一般放在前端做检查。
 
-由于本教程主要是Go后端web教程，这里简单的做一个 后端检查的示例
+由于本教程主要是 **Go** 后端 web教程，这里简单的做一个 后端检查 的示例
 
-LoginModelView里加入  Errs 字段，用于输出检查的错误返回
+LoginModelView里加入 Errs 字段，用于输出检查的错误返回
 
 vm/login.go
 
