@@ -13,7 +13,7 @@ _本章的GitHub链接为_ [Source](https://github.com/bonfy/go-mega-code/tree/0
 
 目前我们的所有的逻辑都集中在了main.go 文件里，包括 model struct， viewmodel struct 定义，还有handler的实现，对于小点的web应用程序，可能这有助于快速开发，不过随着项目的扩大，代码量会变得越来越多，越来越臃肿，最后甚至会影响到阅读代码。这个时候结构的优化就显得尤为重要了。
 
-我们的思路是 建立 package model 负责数据建模（以及后期的数据库orm）， package vm 负责View Model，package controller 负责 http 路由。
+我们的思路是 建立 package model 负责数据建模（以及后一章 [数据库](05-database.md) ORM）， package vm 负责View Model，package controller 负责 http 路由。
 
 每个文件夹下的 g.go 负责存放该package的全局变量 以及 init 函数
 
@@ -425,7 +425,7 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 > 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/cf3fa723ee0cf67c6b1ccee6c8c7d4865a443acd)
 
 
-> Notice: 显示 Error , Flask-Mega 教程里面用的是 flash，我们这边是将错误信息直接 render 到了页面上，其实也是可以用 flash 的，不过 Go 的 Session 目前没有特别好的第三方插件，我们现在还没有用到第三方包，就用了原生的渲染。后续集成Session之后会有例子用到flash。先在此说明下，耐心往下看。
+> Notice: 显示 Error , Flask-Mega 教程里面用的是 flash (flash-messages)，我们这边是将错误信息直接 render 到了页面上，其实也是可以用 flash 的，不过 Go 的 Session 目前没有特别好的第三方插件，我们现在还没有用到第三方包，就用了原生的渲染。后续集成Session之后会有例子用到flash。先在此说明下，耐心往下看。
 
 ## Links
 
