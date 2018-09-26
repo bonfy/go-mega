@@ -45,5 +45,5 @@ Go 是一门新生的语言，而且有个好的公司推广（google），而�
 
 ## Links
 
-* [目录](<README.md>)
-* 下一节: [01-Hello-World](<01-hello-world.md>)
+* [目录](README.md)
+* 下一节: [01-Hello-World](01-hello-world.md)
