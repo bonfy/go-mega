@@ -20,7 +20,7 @@ _本章的GitHub链接为_ [Source](https://github.com/bonfy/go-mega-code/tree/0
 * package controller    - 负责 http 路由
 
 
- 每个文件夹下的 g.go 负责存放该package的全局变量 以及 init 函数。（ 只能说 类似 Python 的 `__init__.py`, 因为 **Go** 其实是通过大小写来表明是否可以外部引用)
+ 每个文件夹下的 g.go 负责存放该package的全局变量 以及 init 函数。（ 只能说 类似 Python 的 `__init__.py`, 因为 **Go** 其实是通过大小写来表明是否可以外部引用, 不像Python，一定要 import 到 `__init__.py` 文件里才能通过 package 名来引用。)
 
 我们先建立model 文件夹，然后将 Post、User struct 分别移到 `model` 文件夹下
 
