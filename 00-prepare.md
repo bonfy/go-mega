@@ -1,6 +1,6 @@
 # 00-Prepare
 
-# 语言
+## 语言
 
 安装Go,详情见参照Go的官方网站的[安装文档](https://golang.org/doc/install)
 
