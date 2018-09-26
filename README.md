@@ -48,4 +48,4 @@
 
 如果你觉得本书对你有所帮助，不妨请我喝杯咖啡，感谢支持！
 
-![](https://camo.githubusercontent.com/53f1f764cbdb91e80f640ec2795ed22762ed416f/687474703a2f2f3769376b36772e636f6d312e7a302e676c622e636c6f7564646e2e636f6d2f77656978696e5f616c697061795f6e65772e6a7067)
+![感谢支持](images/sponsor.jpg)
