@@ -17,7 +17,8 @@ _本章的GitHub链接为_ [Source](https://github.com/bonfy/go-mega-code/tree/0
 
 * package model         - 负责数据建模（以及后一章 [数据库](05-database.md) ORM）
 * package vm            - 负责View Model
-* package controller    - 负责 http 路由。
+* package controller    - 负责 http 路由
+
 
  每个文件夹下的 g.go 负责存放该package的全局变量 以及 init 函数。（ 只能说 类似 Python 的 `__init__.py`, 因为 **Go** 其实是通过大小写来表明是否可以外部引用)
 
@@ -64,9 +65,8 @@ func (v *BaseViewModel) SetTitle(title string) {
 }
 ```
 
-由于\_base.html 基础模板中有 Title 字段，所以 Title是每个view都必有的字段，我们将它单独设成个 BaseViewStruct，方便用组合；
+由于\_base.html 基础模板中有 Title 字段，所以 Title是每个view都必有的字段，我们将它单独设成个 BaseViewStruct，方便用 `匿名组合`；
 
-然后定义一个
 
 vm/index.go
 
@@ -102,7 +102,7 @@ func (IndexViewModelOp) GetVM() IndexViewModel {
 
 将所有的路由相关移到controller
 
-`utils.go` 存放 辅助工具函数，一般都是本package引用，所以小写就可以了, 这里PopulateTemplates 函数其实最好是小写，不过不去管它了。
+> `utils.go` 存放 辅助工具函数，一般都是本package引用，所以小写就可以了, 这里PopulateTemplates 函数其实最好是小写，不过不去管它了。
 
 controller/utils.go
 
@@ -226,7 +226,7 @@ go-mega-code
 
 在将整个项目优化结构之后，我们建立登陆表单就非常简单了。
 
-按照index的做法，login表单我们其实需要，一个`template`, 一个`vm`, 以及一个`handler`（其实后面基本上所有的加页面的做法也是类似）
+按照 index 的做法，login表单 我们其实需要，一个 `template`, 一个 `vm`, 以及一个 `handler`（其实后面基本上所有的加页面的做法也是类似）
 
 templates/\_base.html
 
@@ -253,7 +253,7 @@ templates/content/login.html
 {{end}}
 ```
 
-login.html 还是继承\_base.html 只要关注 content的内容就行了
+login.html 还是继承 \_base.html 只要关注 content 的内容就行了
 
 vm/login.go
 
@@ -276,7 +276,7 @@ func (LoginViewModelOp) GetVM() LoginViewModel {
 }
 ```
 
-这里 v.SetTitle 就是用了 组合的特性，继承了BaseViewModel的 SetTitle 方法
+这里 `v.SetTitle` 就是用了 `匿名组合` 的特性，继承了 BaseViewModel 的 `SetTitle` 方法
 
 controller/home.go 中加入 loginHandler
 
