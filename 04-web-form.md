@@ -15,7 +15,7 @@ _本章的GitHub链接为_ [Source](https://github.com/bonfy/go-mega-code/tree/0
 
 我们的思路是 建立这样的数据结构:
 
-* package model         - 负责数据建模（以及后一章 数据库 ORM）
+* package model         - 负责数据建模（以及后一章 [数据库](05-database.md) ORM）
 * package vm            - 负责View Model
 * package controller    - 负责 http 路由
 
@@ -441,4 +441,4 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 
   * [目录](README.md)
   * 上一节: [03-Template-Advance](03-template-advance.md)
-  * 下一节: 05-Database
+  * 下一节: [05-Database](05-database.md)
