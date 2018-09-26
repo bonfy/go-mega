@@ -192,5 +192,5 @@ templates/content/index.html
 ## Links
 
   * [目录](README.md)
-  * 上一节: [01-Hello-World](02-template-basic.md)
-  * 下一节: [03-Template-Advance](04-web-form.md)
+  * 上一节: [02-Template-Basic](02-template-basic.md)
+  * 下一节: [04-Web-Form](04-web-form.md)
