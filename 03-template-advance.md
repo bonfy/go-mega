@@ -183,7 +183,9 @@ templates/content/index.html
 
 由于没有像 Jinja2 这样的原生支持模板继承，这个实现的关键就是 PopulateTemplates 函数，它的作用是 遍历 templates/content/ 文件夹下的所有文件，并和 templates/\_base.html 合成 template.Template，然后再存入 map 中(在 Python 中一般叫 dict)，可以使用例如 index.html 的 key 来访问。
 
-我们现在运行下程序，页面还是和原来一样，不过我们的templates文件夹已经有了基础模板，并且具备了快速扩展的能力。下章 [Web Form](04-web-form.md) 我们可以看见效果。
+我们现在运行下程序，页面还是和原来一样(只是我们在 \_base template 里面加入了 Home 的导航)，不过我们的templates文件夹已经有了基础模板，并且具备了快速扩展的能力。下章 [Web Form](04-web-form.md) 我们可以看见效果。
+
+![03-01](images/03-01.png)
 
 > 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/e5fd3ef25bcc6874818621d06e68dee3d379778a)
 
