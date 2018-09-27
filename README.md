@@ -1,7 +1,6 @@
 ![cover](cover.png)
 
 # Go-Mega
-===
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-brightgreen.svg)](https://raw.githubusercontent.com/bonfy/go-mega/master/LICENSE)
 
