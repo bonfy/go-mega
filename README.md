@@ -48,8 +48,8 @@
 
 ## 相关资源
 
-* [书籍  Github源地址](https://github.com/bonfy/go-mega)
-* [Code Github源地址](https://github.com/bonfy/go-mega-code)
+* [书籍 Github源地址](https://github.com/bonfy/go-mega)
+* [源码 Github源地址](https://github.com/bonfy/go-mega-code)
 
 ## 支持我
 
