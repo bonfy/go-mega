@@ -46,6 +46,11 @@
 * [Twitter](https://twitter.com/foreverbonfy)
 * [Email](mailto:bonfygithub@163.com)
 
+## 相关资源
+
+* [书籍  Github源地址](https://github.com/bonfy/go-mega-code)
+* [Code Github源地址](https://github.com/bonfy/go-mega-code)
+
 ## 支持我
 
 如果你觉得本书对你有所帮助，不妨请我喝杯咖啡，感谢支持！
