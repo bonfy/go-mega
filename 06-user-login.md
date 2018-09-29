@@ -18,9 +18,12 @@ _本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tre
 $ go get -v github.com/gorilla/sessions
 ```
 
-#### 将 session 操作封装成方便我们自己操作的函数
+#### 全局变量设置
 
-在 controller/g.go 中设置将要用到的全局变量 `sessionName`, `store`
+
+在 controller/g.go 中设置将要用到的全局变量 `sessionName`, `store`, 
+
+> Tip: 设置全局变量其实是方便以后的更新，如果以后sessionName要改成 `flask-mega`,只要跑到全局设置的地方修改，不用到每个函数中修改，而且还容易改错。
 
 store 初始化的时候可以设置 secret-key，这里直接 hard code 了，其实安全点的做法可以设置在配置文件里,这里就这样偷懒了吧
 
@@ -54,7 +57,7 @@ func Startup() {
 ```
 
 
-#### 在controller/utils 里增加操作函数
+#### 将 session 操作封装
 
 操作函数基本上就是  `GetSession`, `SetSession`, `ClearSession` 所有语言说道Session基本上就实现这三个基本的，后面属于自由发挥
 
