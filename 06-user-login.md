@@ -12,7 +12,7 @@ _本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tre
 
 不知道 **Go** 有没有第三方库实现类似 Flask-Login 这样的登陆辅助(我也没有好好去找)，不过我们知道原理，基本上就是用 Session 实现的，对 Session 不了解的同学可以看下 [Session and Cookie](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/06.1.md)
 
-这里我们采用 Session 来判断用户是否登陆这里我们又要引入一个第三方package来实现这个Session
+这里我们又要引入一个第三方package来实现这个Session(如果不引入第三方库，自己处理还满麻烦的，所以就选择easy way)
 
 ```cmd
 $ go get -v github.com/gorilla/sessions
