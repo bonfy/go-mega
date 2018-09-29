@@ -1,11 +1,16 @@
 # 06-User Login
 
-本章将教你如何结合这两章的主题来创建一个简单的用户登录系统。
+这章我将告诉你如何创建一个用户登录子系统。
+
+你在[第四章](04-web-form.md)中学会了如何创建用户登录表单，在[第五章](05-database.md)中学会了运用数据库。本章将教你如何结合这两章的主题来创建一个简单的用户登录系统。
+
 
 _本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tree/06-User-Login), [Diff](https://github.com/bonfy/go-mega-code/compare/05-Database...06-User-Login), 
 [Zip](https://github.com/bonfy/go-mega-code/archive/v0.6.zip)
 
 ## Session
+
+不知道 **Go** 有没有第三方库实现类似 Flask-Login 这样的登陆辅助(我也没有好好去找)，不过我们知道原理，基本上就是用 Session 实现的，对 Session 不了解的同学可以看下 [Session and Cookie](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/06.1.md)
 
 这里我们采用 Session 来判断用户是否登陆这里我们又要引入一个第三方package来实现这个Session
 
@@ -15,8 +20,11 @@ $ go get -v github.com/gorilla/sessions
 
 #### 将 session 操作封装成方便我们自己操作的函数
 
-在 controller/g.go 中设置将要用到的全局变量
+在 controller/g.go 中设置将要用到的全局变量 `sessionName`, `store`
 
+store 初始化的时候可以设置 secret-key，这里直接 hard code 了，其实安全点的做法可以设置在配置文件里,这里就这样偷懒了吧
+
+controller/g.go
 ```go
 package controller
 
@@ -45,10 +53,12 @@ func Startup() {
 }
 ```
 
-store 初始化的时候可以设置 secret-key，这里直接 hard code 了，其实安全点的做法可以设置在配置文件里,这里就这样偷懒了吧
 
 #### 在controller/utils 里增加操作函数
 
+操作函数基本上就是  `GetSession`, `SetSession`, `ClearSession` 所有语言说道Session基本上就实现这三个基本的，后面属于自由发挥
+
+controller/utils.go
 ```go
 ...
 
@@ -183,7 +193,7 @@ func logoutHandler(w http.ResponseWriter, r *http.Request) {
 
 现在我们访问根目录`http://127.0.0.1/`是不受登陆控制的，如果我们要给它加上必须登陆后才能访问，要怎么处理呢？
 
-答案就是加上 middleware 中间层去判断是否存在session
+答案就是加上 middleware 中间层去判断是否存在session，类似于 Python 中的装饰器的作用
 
 controller/middle.go
 
@@ -230,6 +240,8 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 ```
 
 现在我们访问到 indexHandler 的时候 middleAuth 保证是有session的，所以取出session，根据取出的user来获取viewmodel响应的，我们的 vm 也要调整
+
+主要是将 User区分下，比如 `CurrentUser` 以后就代表登陆的用户，也就是Session的User，例如`ProfileUser` 则可以是你查看的任何人
 
 vm/g.go
 
