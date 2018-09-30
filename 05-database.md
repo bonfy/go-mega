@@ -265,6 +265,8 @@ func GetPostsByUserID(id int) (*[]Post, error) {
 }
 ```
 
+> Notice: 特别注意这里的 Preload, 相当于预先的 Join Table，不然取得的 posts 就没有 User 信息
+
 cmd/db\_init/main.go
 
 ```go
