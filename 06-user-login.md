@@ -600,4 +600,4 @@ func logoutHandler(w http.ResponseWriter, r *http.Request) {
 
   * [目录](README.md)
   * 上一节: [05-Database](05-database.md)
-  * 下一节: [07-Profile-Page-And-Avatar]()
+  * 下一节: [07-Profile-Page-And-Avatar](07-profile-page-and-avatar.md)
