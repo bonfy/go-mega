@@ -21,11 +21,11 @@
 | [04-Web-Form](04-web-form.md) | [View](https://github.com/bonfy/go-mega-code/tree/04-Web-Form) |  [Download](https://github.com/bonfy/go-mega-code/archive/v0.4.zip) |
 | [05-Database](05-database.md) | [View](https://github.com/bonfy/go-mega-code/tree/05-Database) | [Download](https://github.com/bonfy/go-mega-code/archive/v0.5.zip) |
 | [06-User-Login](06-user-login.md) | [View](https://github.com/bonfy/go-mega-code/tree/06-User-Login) | [Download](https://github.com/bonfy/go-mega-code/archive/v0.6.zip) |
-| 07-Profile-Page-And-Avatar |  | |
-| 08-Follower |  | |
-| 09-Pagination |  | |
-| 10-Email-Support |  | |
-| 11-Facelift |  | |
+| [07-Profile-Page-And-Avatar](07-profile-page-and-avatar.md) | [View](https://github.com/bonfy/go-mega-code/tree/07-Profile-Page) | [Download](https://github.com/bonfy/go-mega-code/archive/v0.7.zip) |
+| 08-Follower(2018-10-05) |  | |
+| 09-Pagination(2018-10-08) |  | |
+| 10-Email-Support(2018-10-11) |  | |
+| 11-Facelift(2018-10-14) |  | |
 
 ## 声明
 
