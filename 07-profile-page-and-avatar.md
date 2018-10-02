@@ -622,3 +622,9 @@ func profileEditHandler(w http.ResponseWriter, r *http.Request) {
 ![07-06](images/07-06.png)
 
 > 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/a0a50dfc38c61949f065d0e02ef5bb0e89ffcdd0)
+
+## Links
+
+  * [目录](README.md)
+  * 上一节: [06-User-Login](06-user-login.md)
+  * 下一节: [08-Follower]()
