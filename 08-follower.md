@@ -328,3 +328,8 @@ $ go run main.go
 
 > 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/b1502cf92a9e1ee9f77cfa2b661646e6e4fd414c)
 
+## Links
+
+  * [目录](README.md)
+  * 上一节: [07-Profile-Page-And-Avatar](07-profile-page-and-avatar.md)
+  * 下一节: [09-Pagination]()
