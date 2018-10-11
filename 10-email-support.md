@@ -319,6 +319,8 @@ func CheckToken(tokenString string) (string, error) {
 
 目前我们点击邮件中的邮件是不能操作的，因为我们其实并没有 `/reset_password` 这个handler，那这里我们来完成它
 
+其实密码重置就是一个简单的表单， 两个密码框，检验输入一致以及符合密码规范就可以了，操作起来不算太复杂。
+
 vm/reset_password.go
 ```go
 package vm
