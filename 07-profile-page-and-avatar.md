@@ -168,6 +168,8 @@ Gravatar服务使用起来非常简单。 要请求给定用户的图片，使�
 
 理论说好了，我们来写代码，由于 **Go** 原生的Template 不像 Jinja2 那么好支持函数（ **Go** Template 是支持自定义函数的，只是要在 template.New().Funcs() 中预先传入，与我们已有的 `PopulateTemplates`函数集成上有点难度）
 
+> Notice: Go Template 支持类的 Func，不用预先传入，这里 Avatar 字段不是特别的必要了，特此说明，可以参见 [12-Dates-And-Times](12-dates-and-times.md)的用法
+
 所以这里发挥主观能动性，直接将 Avatar 作为字段放入数据库中，等于冗余了Avatar数据，但是减少了我们coding的难度（我们也乘此机会，fix下上次提到的Gorm format问题）
 
 虽然我们 `GeneratePasswordHash` 就是 MD5 方法，不过为了逻辑的清晰，我们可以像下面代码这样处理。
