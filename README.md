@@ -26,7 +26,7 @@
 | [09-Pagination](09-pagination.md) | [View](https://github.com/bonfy/go-mega-code/tree/09-Pagination) | [Download](https://github.com/bonfy/go-mega-code/archive/v0.9.zip)|
 | [10-Email-Support](10-email-support.md) | [View](https://github.com/bonfy/go-mega-code/tree/10-Email-Support) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.0.zip)|
 | [11-Facelift](11-facelift.md) | [View](https://github.com/bonfy/go-mega-code/tree/11-Facelift) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.1.zip) |
-| [12-Dates-And-Times](11-dates-and-times.md) | [View](https://github.com/bonfy/go-mega-code/tree/12-Dates-And-Times) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.2.zip) |
+| [12-Dates-And-Times](12-dates-and-times.md) | [View](https://github.com/bonfy/go-mega-code/tree/12-Dates-And-Times) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.2.zip) |
 
 ## 声明
 
