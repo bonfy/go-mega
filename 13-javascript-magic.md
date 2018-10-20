@@ -2,7 +2,7 @@
 
 在本章，我们将添加一个功能，当你将鼠标悬停在用户的昵称上时，会弹出一个漂亮的窗口。
 
-社交网站的常见用户交互模式是，当你将鼠标悬停在用户的名称上时，可以在弹出窗口中显示用户的主要信息。 如果你从未注意到这一点，请访问Twitter，Facebook，LinkedIn或任何其他主要社交网站，当你看到用户名时，只需将鼠标指针放在上面几秒钟即可看到弹出窗口。 本章将致力于为Microblog实现该功能。
+社交网站的常见用户交互模式是，当你将鼠标悬停在用户的名称上时，可以在弹出窗口中显示用户的主要信息。 如果你从未注意到这一点，请访问Twitter，Facebook，LinkedIn或任何其他主要社交网站，当你看到用户名时，只需将鼠标指针放在上面几秒钟即可看到弹出窗口。
 
 _本章的GitHub链接为：_ [Source](https://github.com/bonfy/go-mega-code/tree/13-Javascript-Magic), [Diff](https://github.com/bonfy/go-mega-code/compare/12-Dates-And-Times...13-Javascript-Magic), [Zip](https://github.com/bonfy/go-mega-code/archive/v1.3.zip)
 
