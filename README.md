@@ -28,6 +28,7 @@
 | [11-Facelift](11-facelift.md) | [View](https://github.com/bonfy/go-mega-code/tree/11-Facelift) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.1.zip) |
 | [12-Dates-And-Times](12-dates-and-times.md) | [View](https://github.com/bonfy/go-mega-code/tree/12-Dates-And-Times) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.2.zip) |
 | [13-Javascript-Magic](13-javascript-magic.md) | [View](https://github.com/bonfy/go-mega-code/tree/13-Javascript-Magic) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.3.zip) |
+| [14-Deployment-On-Heroku](14-deployment-on-heroku.md) | [View](https://github.com/bonfy/go-mega-code/tree/14-Deployment-On-Heroku) | [Download](https://github.com/bonfy/go-mega-code/archive/v1.4.zip) |
 
 ## 声明
 
