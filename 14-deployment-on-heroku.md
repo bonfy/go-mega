@@ -312,6 +312,8 @@ $ git push heroku 14-Deployment-On-Heroku:master
 
 现在访问 [https://go-mega.herokuapp.com/](https://go-mega.herokuapp.com/) 就能看见 Demo 了
 
+> Notice: Heroku 绑定域名要收费，所以这里就不绑定域名了
+
 ![14-01](images/14-01.png)
 
 > 本小节 [Diff](https://github.com/bonfy/go-mega-code/commit/6dd19e4cd7e692e28bc1a091318b1d2a8a6126f7)
