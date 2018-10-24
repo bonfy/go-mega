@@ -55,6 +55,7 @@
 
 * [书籍 Github源地址](https://github.com/bonfy/go-mega)
 * [源码 Github源地址](https://github.com/bonfy/go-mega-code)
+* [Demo 地址](https://go-mega.herokuapp.com)
 
 ## 支持我
 
