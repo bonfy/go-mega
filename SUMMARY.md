@@ -17,4 +17,4 @@
 * [13-Javascript-Magic](13-javascript-magic.md)
 * [14-Deployment-On-Heroku](14-deployment-on-heroku.md)
 * [15-Deployment-On-Linux](15-deployment-on-linux.md)
-* [16-summary](16-summary.md)
+* [16-Summary](16-summary.md)
