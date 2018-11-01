@@ -50,6 +50,7 @@
 
 * [个人主页](https://bonfy.im)
 * [个人博客](https://blog.bonfy.im)
+* [知乎](https://zhuanlan.zhihu.com/bonfy)
 * [GitHub](https://github.com/bonfy)
 * [Twitter](https://twitter.com/foreverbonfy)
 * [Email](mailto:bonfygithub@163.com)
