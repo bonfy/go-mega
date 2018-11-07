@@ -63,8 +63,8 @@
 
 ## 电子书
 
-* [epub 下载链接](https://raw.githubusercontent.com/bonfy/go-mega/master/ebook/Go-Mega%20Tutorial.epub)
-* [mobi 下载链接](https://raw.githubusercontent.com/bonfy/go-mega/master/ebook/Go-Mega%20Tutorial.mobi)
+* [epub 下载链接](https://raw.githubusercontent.com/bonfy/image/master/ebook/Go-Mega%20Tutorial.epub)
+* [mobi 下载链接](https://raw.githubusercontent.com/bonfy/image/master/ebook/Go-Mega%20Tutorial.mobi)
 
 ## 支持我
 
