@@ -61,6 +61,11 @@
 * [源码 Github源地址](https://github.com/bonfy/go-mega-code)
 * [Demo 地址](https://go-mega.herokuapp.com)
 
+## 电子书
+
+* [epub 下载链接](https://raw.githubusercontent.com/bonfy/go-mega/master/ebook/Go-Mega%20Tutorial.epub)
+* [mobi 下载链接](https://raw.githubusercontent.com/bonfy/go-mega/master/ebook/Go-Mega%20Tutorial.mobi)
+
 ## 支持我
 
 如果您感觉有收获，欢迎给我打赏，以激励我输出更多优质内容，感谢支持！
