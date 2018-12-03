@@ -65,7 +65,7 @@ templates.index.html
 
 其实 Go 的模板应该没有 Flask jinja2 这样的功能强大，它只有 include，所以为了实现模板的继承，我们需要发挥下主观能动性
 
-index.html
+main.go
 
 ```go
 package main
@@ -138,8 +138,8 @@ func main() {
 		u2 := User{Username: "rene"}
 
 		posts := []Post{
-			{User: u1, Body: "Beautiful day in Portland!"},
-			{User: u2, Body: "The Avengers movie was so cool!"},
+			Post{User: u1, Body: "Beautiful day in Portland!"},
+			Post{User: u2, Body: "The Avengers movie was so cool!"},
 		}
 
 		v := IndexViewModel{Title: "Homepage", User: u1, Posts: posts}
