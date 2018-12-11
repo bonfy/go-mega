@@ -37,7 +37,7 @@ func main() {
 }
 ```
 
-短短不到10行代码，我们的 Hello World 应用就已经完成了，而且不需要任何的其他第三方Package，只需要引入官方的 _**net/http**_ 就行了，就是这么easy
+短短不到10行代码，我们的 Hello World 应用就已经完成了，而且不需要任何的其他第三方Package，只需要引入官方的 _**net/http**_ 就行了，就是这么简单
 
 让我们来运行下面的命令，看下效果
 
@@ -61,7 +61,7 @@ http://127.0.0.1:8888
 
 这里对上面的代码进行简单的说明
 
-这里的 `func main()` 是主程序入口，主要用到了 _**net/http**_ 的两个函数
+`func main()` 是主程序入口，主要用到了 _**net/http**_ 的两个函数
 
 ```go
 func HandleFunc(pattern string, handler func(ResponseWriter, *Request))
@@ -86,9 +86,9 @@ fmt.Fprintf(w, "Hello World")
 io.WriteString(w, "Hello World")
 ```
 
-其中第一种用的是 ResponseWriter 的 `Write([]byte) (int, error)` 方法， 而 后面两种是稍微用到了 Go 里面interface 的特性， ResponseWriter interface 要实现 `Write([]byte) (int, error)` 的方法，所以也就实现了 io.Writer 方法，所以可以作为 io.Writer 的类型作为 后面两个函数的参数。
+其中第一种用的是 ResponseWriter 的 `Write([]byte) (int, error)` 方法， 而 后面两种是稍微用到了 Go 里面 interface 的特性， ResponseWriter interface 要实现 `Write([]byte) (int, error)` 的方法，所以也就实现了 io.Writer 方法，所以可以作为 io.Writer 的类型作为 后面两个函数的参数。
 
-这里如果想更深入的了解 net/http 处理请求的话，可以看下Go源码中的 `net/http/server.go`
+如果想更深入的了解 net/http 处理请求的话，可以看下Go源码中的 `net/http/server.go`
 
 或者看下 [Go的http包详解](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/03.4.md)
 
